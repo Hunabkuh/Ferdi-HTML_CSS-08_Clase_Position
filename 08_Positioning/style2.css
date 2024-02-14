@@ -1,0 +1,106 @@
+/* COMPOSICION VISUAL Realiza una composición de página con los diferentes tipos de posicionamiento: absolute,
+relative,
+fixed y sticky.
+
+Tienes una imagen de fondo general (no obligatorio).
+
+MENU: sticky FOOTER: fixed SLOGAN: absolute ELEMENTO(s) UBICADO(s) EN EL FONDO: relative. Ejemplo,
+la vaca en el paisaje. ELEMENTO(s) SUPERPUESTOS: Probar z-index donde desees Puedes realizar una composición lógica o ilógica: ej: poner en el paisaje de montaña un astronauta en vez de una vaca. O poner la vaca en Nueva York. Tu creatividad al poder !+EXTRA: prueba a usar algún icono de Bootstrap+EXTRA: probar los posicionamientos con Bootstrap (ojo, z-index se mide entre solo entre -1 y 3, y en vez de left y right se usa start y end) IMPORTANTE A RECORDAR: RELATIVE es posición relativa a donde cae ese elemento naturalmente ABSOLUTE: posición respecto a la página EXCEPTO si está dentro de otro elemento que tiene asignado un posicionamiento (normalmente, relative) */
+body {
+    padding: 30px;
+    border: solid;
+    border-width: 10px;
+    border-color: blue;
+    margin: 0px;
+    background-color: black;
+    background-image: url(/HTML/07_Bootstrap/Img/fondo_nav.jpg);
+    background-size: cover;
+    width: fit-content;
+}
+
+header {
+    background-color: blueviolet;
+    border: solid;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    text-shadow: 10px 10px 10px white;
+    position: sticky;
+    top: 5px;
+}
+
+section {
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: solid;
+    background-color: rgb(238, 218, 153);
+    justify-content: center;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.cajas_section {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 30px;
+    border: solid;
+    box-shadow: 10px 10px 10px grey;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.footer {
+    background-image: url(/HTML/07_Bootstrap/Img/fondo_nav.jpg);
+    background-size: contain;
+    color: rgb(241, 194, 9);
+    padding: 5px;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    opacity: 90%;
+    border: solid;
+    border-color: rgb(242, 211, 8);
+    text-shadow: 10px 10px 10px orange;
+    border-width: 10px;
+    bottom: 0px;
+    display: flex;
+    margin: 1px;
+}
+
+.div-footer {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    border-color: aliceblue;
+    border-style: dotted;
+    border-width: 5px;
+    margin: 10px;
+    padding: 15px;
+}
+
+#cont-div-footer {
+    width: 100%;
+    align-items: center;
+    border-color: red;
+    border-style: dotted;
+    border-width: 5px;
+}
+
+#absoluto {
+    background-color: bisque;
+    z-index: 20;
+}
+
+
+
+#absoluto:hover {
+    /* position: absolute; */
+    background-color: black;
+    rotate: 20deg;
+
+}
